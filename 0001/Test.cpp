@@ -10,7 +10,7 @@ typedef std::vector<TestCase> TestCases;
 
 #include <SolFixture.h>
 
-INSTANTIATE_TEST_SUITE_P(LeetCode0001, SolFixture,
+INSTANTIATE_TEST_SUITE_P(LeetCode, SolFixture,
                          ::testing::Values(
                              TestCase{
                                  TestCaseIn{{2, 7, 11, 15}, 9}, /* In */
@@ -25,7 +25,7 @@ INSTANTIATE_TEST_SUITE_P(LeetCode0001, SolFixture,
                                  TestCaseOut{0, 1}      /* Out */
                              }));
 
-TEST_P(SolFixture, ControlCAFS_CheckSerializeDeserializeSize) {
+TEST_P(SolFixture, LeetCode) {
   TestCase testCase = GetParam();
   TestCaseIn &in = std::get<0>(testCase);
   TestCaseOut &out = std::get<1>(testCase);
