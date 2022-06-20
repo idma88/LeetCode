@@ -22,3 +22,5 @@ find_package(GTest REQUIRED)
 if(NOT GTEST_FOUND)
     message(FATAL_ERROR "GTest NOT found!")
 endif()
+
+add_subdirectory("0001")
