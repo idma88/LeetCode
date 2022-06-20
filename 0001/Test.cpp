@@ -30,7 +30,7 @@ TEST_P(SolFixture, LeetCode) {
   TestCaseIn &in = std::get<0>(testCase);
   TestCaseOut &out = std::get<1>(testCase);
 
-  VecInt res = sol.twoSum(std::get<0>(in), std::get<1>(in));
+  TestCaseOut res = sol.twoSum(std::get<0>(in), std::get<1>(in));
 
   std::sort(res.begin(), res.end());
   std::sort(out.begin(), out.end());
