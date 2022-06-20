@@ -1,0 +1,16 @@
+# Input
+```
+"PAYPALISHIRING"
+3
+"PAYPALISHIRING"
+4
+"A"
+1
+```
+
+# Output
+```
+"PAHNAPLSIIGYIR"
+"PINALSIGYAHRPI"
+"A"
+```
